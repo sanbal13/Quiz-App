@@ -1,0 +1,38 @@
+.loader {
+    height: 8rem;
+    width: 8rem;
+    border: .5rem solid rgb(192, 248, 109);
+    border-bottom: .5rem solid grey;
+    border-radius: 50%;
+    margin: 5rem auto;
+    animation-name: spin;   
+    animation-duration: 5s;
+    animation-iteration-count: infinite;    
+    padding: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-text {
+    color: red;
+    animation-name: loader;    
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        color: #000;
+    }
+    100% {
+        transform: rotate(-360deg);
+        color: #000;
+    }
+}
